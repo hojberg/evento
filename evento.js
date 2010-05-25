@@ -34,7 +34,7 @@
     }
     else if (element.attachEvent) {
       if (eventType === 'DOMContentLoaded') {
-        element   = w;
+        element   = window;
         eventType = "load";
       }
       return element.attachEvent("on" + eventType, handler);
